@@ -17,6 +17,18 @@ class TeamsController < ApplicationController
 
   def edit; end
 
+  def owner_change
+    if current_user.owner?(@working_team)
+      @working_team.owner_id = params[:id]
+      @working_team.save
+      new_leader = @working_team.owner
+      NewLeaderMailer.new_leader_mail(new_leader).deliver
+      redirect_to team_path(@working_team), notice: I18n.t('views.messages.success_owner_change')
+    else
+      redirect_to team_path(@working_team), notice: I18n.t('views.messages.no_authority_without_owner')
+    end
+  end
+  
   def create
     @team = Team.new(team_params)
     @team.owner = current_user
