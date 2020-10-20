@@ -1,0 +1,19 @@
+2020-10-20 08:31:46[WARN] user: wilromeo
+GET /teams/2
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-task-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb___427428747977167622_69867176426580'
+  /home/wilromeo/Bureau/teamdev-task-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb___427428747977167622_69867176426580'
+
+2020-10-20 08:31:46[WARN] user: wilromeo
+GET /teams/2
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-task-develop/app/views/shared/layout/_sidebar.html.erb:41:in `block in _app_views_shared_layout__sidebar_html_erb___800468095381585687_69867194759960'
+  /home/wilromeo/Bureau/teamdev-task-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___800468095381585687_69867194759960'
+  /home/wilromeo/Bureau/teamdev-task-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___1998835346884000087_69867176428980'
+
