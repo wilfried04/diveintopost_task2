@@ -22,7 +22,7 @@ class AgendasController < ApplicationController
   end
   def destroy
     @agenda.destroy
-    #redirect_to dashboard_url
+    
     redirect_to dashboard_url, notice:"タスクを削除しました！"
 
   end
