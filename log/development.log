@@ -355,3 +355,436 @@ Processing by Users::SessionsController#new as HTML
 Completed 200 OK in 2125ms (Views: 1947.1ms | ActiveRecord: 123.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-10-22 09:17:48 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#top as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-10-22 09:17:49 +0100
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/login/application
+  Rendered users/shared/_links.html.erb (1.9ms)
+  Rendered users/sessions/new.html.erb within layouts/login/application (7.2ms)
+Completed 200 OK in 36ms (Views: 14.7ms | ActiveRecord: 4.2ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mUser Load (49.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Update (22.7ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "encrypted_password" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["email", "demarcus_krajcik@croninernser.net"], ["encrypted_password", "$2a$11$bkt511bk9gaYCaXPwb0OfuWP6iuNg1kyOYrmotoCXf4znkI0hmf.6"], ["updated_at", "2020-10-22 08:18:13.853494"], ["id", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "encrypted_password" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["email", "julianne_mraz@veum.org"], ["encrypted_password", "$2a$11$fObCZ0DkYiRfOKQAxVIRWuR08L8djEbWVV9aSKy.Zxd2Adjhxwjmi"], ["updated_at", "2020-10-22 08:18:14.024000"], ["id", 2]]
+  ↳ bin/rails:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "encrypted_password" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["email", "mohammad@grimesreichel.info"], ["encrypted_password", "$2a$11$feuWjDNlS9KkLworEVTey.G/IU8CqpvtexIDCeFEwtbXXnAsdZ442"], ["updated_at", "2020-10-22 08:18:14.165369"], ["id", 3]]
+  ↳ bin/rails:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "encrypted_password" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["email", "parker.tremblay@labadie.info"], ["encrypted_password", "$2a$11$7hNzwQfXcRAUBQ5F4xhc/.WXZXlnJAeI7eZ0xFdyXhyfb/gOtCqO2"], ["updated_at", "2020-10-22 08:18:14.307306"], ["id", 4]]
+  ↳ bin/rails:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "encrypted_password" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["email", "mathilde.kirlin@walsh.biz"], ["encrypted_password", "$2a$11$7KrnWggisuSK.PFD9JywLefIhTxi9q6ExyVn4faCkCyro3VGtDr7C"], ["updated_at", "2020-10-22 08:18:14.450163"], ["id", 5]]
+  ↳ bin/rails:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "encrypted_password" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["email", "savion@shanahanlind.io"], ["encrypted_password", "$2a$11$oZsGMGRf62mMTADxo9JlCeVVaNk6SBm6y2ZllwGxiWoyRiv46BVlW"], ["updated_at", "2020-10-22 08:18:14.592950"], ["id", 6]]
+  ↳ bin/rails:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "encrypted_password" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["email", "finn_veum@armstrong.com"], ["encrypted_password", "$2a$11$0x.2k.OV8j.b1IPg8fjc7O.c59bgavDEMZ2h6/ih72KdYwMObZAei"], ["updated_at", "2020-10-22 08:18:14.734775"], ["id", 7]]
+  ↳ bin/rails:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "encrypted_password" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["email", "sheldon_keeling@beahan.name"], ["encrypted_password", "$2a$11$EJWO7cJMIYcZILv2VEDho.pfLGu/IUEbzsVnjwbktYetDta83tJK6"], ["updated_at", "2020-10-22 08:18:14.876336"], ["id", 8]]
+  ↳ bin/rails:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "encrypted_password" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["email", "amani.erdman@schowalterwolff.co"], ["encrypted_password", "$2a$11$xiU1ckuCeQcY./yqcIO2teCqeyyDW7.Ogbrvi6TbpCCmQCW6N/OfG"], ["updated_at", "2020-10-22 08:18:15.018810"], ["id", 9]]
+  ↳ bin/rails:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "email" = $1, "encrypted_password" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["email", "avery_strosin@heidenreich.biz"], ["encrypted_password", "$2a$11$ikcYllg67hJrnoF7XkQydubtoYiaOdTs9qiemtHRGVnTKJDRPqKWi"], ["updated_at", "2020-10-22 08:18:15.160568"], ["id", 10]]
+  ↳ bin/rails:4
+  [1m[35m (37.3ms)[0m  [1m[34m              SELECT setval('public.users_id_seq', (SELECT GREATEST(MAX("id")+(SELECT seqincrement FROM pg_sequence WHERE seqrelid = 'public.users_id_seq'::regclass), (SELECT seqmin FROM pg_sequence WHERE seqrelid = 'public.users_id_seq'::regclass)) FROM "users"), false)
+[0m
+  ↳ bin/rails:4
+  [1m[36mTeam Load (55.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mTeam Update (0.5ms)[0m  [1m[33mUPDATE "teams" SET "name" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["name", "Prodder"], ["updated_at", "2020-10-22 08:18:15.385257"], ["id", 2]]
+  ↳ bin/rails:4
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mTeam Update (0.4ms)[0m  [1m[33mUPDATE "teams" SET "name" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["name", "Sonair"], ["updated_at", "2020-10-22 08:18:15.388230"], ["id", 3]]
+  ↳ bin/rails:4
+  [1m[35m (8.7ms)[0m  [1m[34m              SELECT setval('public.teams_id_seq', (SELECT GREATEST(MAX("id")+(SELECT seqincrement FROM pg_sequence WHERE seqrelid = 'public.teams_id_seq'::regclass), (SELECT seqmin FROM pg_sequence WHERE seqrelid = 'public.teams_id_seq'::regclass)) FROM "teams"), false)
+[0m
+  ↳ bin/rails:4
+  [1m[36mAssign Load (35.6ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAssign Load (0.5ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAssign Load (0.5ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAssign Load (0.2ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (16.7ms)[0m  [1m[34m              SELECT setval('public.assigns_id_seq', (SELECT GREATEST(MAX("id")+(SELECT seqincrement FROM pg_sequence WHERE seqrelid = 'public.assigns_id_seq'::regclass), (SELECT seqmin FROM pg_sequence WHERE seqrelid = 'public.assigns_id_seq'::regclass)) FROM "assigns"), false)
+[0m
+  ↳ bin/rails:4
+  [1m[36mAgenda Load (32.1ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Update (0.5ms)[0m  [1m[33mUPDATE "agendas" SET "title" = $1, "updated_at" = $2 WHERE "agendas"."id" = $3[0m  [["title", "Lucy"], ["updated_at", "2020-10-22 08:18:15.570185"], ["id", 1]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Update (0.5ms)[0m  [1m[33mUPDATE "agendas" SET "title" = $1, "description" = $2, "updated_at" = $3 WHERE "agendas"."id" = $4[0m  [["title", "Tiger"], ["description", "Cat Aficionado Association"], ["updated_at", "2020-10-22 08:18:15.573908"], ["id", 2]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Update (0.9ms)[0m  [1m[33mUPDATE "agendas" SET "title" = $1, "description" = $2, "updated_at" = $3 WHERE "agendas"."id" = $4[0m  [["title", "Oscar"], ["description", "Canadian Cat Association"], ["updated_at", "2020-10-22 08:18:15.578156"], ["id", 3]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Update (0.7ms)[0m  [1m[33mUPDATE "agendas" SET "title" = $1, "description" = $2, "updated_at" = $3 WHERE "agendas"."id" = $4[0m  [["title", "Milo"], ["description", "American Cat Fanciers Association"], ["updated_at", "2020-10-22 08:18:15.582219"], ["id", 4]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Update (0.9ms)[0m  [1m[33mUPDATE "agendas" SET "title" = $1, "description" = $2, "updated_at" = $3 WHERE "agendas"."id" = $4[0m  [["title", "Shadow"], ["description", "Canadian Cat Association"], ["updated_at", "2020-10-22 08:18:15.585908"], ["id", 5]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Update (0.5ms)[0m  [1m[33mUPDATE "agendas" SET "title" = $1, "description" = $2, "updated_at" = $3 WHERE "agendas"."id" = $4[0m  [["title", "Charlie"], ["description", "The International Cat Association"], ["updated_at", "2020-10-22 08:18:15.589530"], ["id", 6]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Update (0.5ms)[0m  [1m[33mUPDATE "agendas" SET "title" = $1, "description" = $2, "updated_at" = $3 WHERE "agendas"."id" = $4[0m  [["title", "Molly"], ["description", "The International Cat Association"], ["updated_at", "2020-10-22 08:18:15.593019"], ["id", 7]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mAgenda Update (0.5ms)[0m  [1m[33mUPDATE "agendas" SET "title" = $1, "updated_at" = $2 WHERE "agendas"."id" = $3[0m  [["title", "Lily"], ["updated_at", "2020-10-22 08:18:15.596183"], ["id", 8]]
+  ↳ bin/rails:4
+  [1m[35m (5.0ms)[0m  [1m[34m              SELECT setval('public.agendas_id_seq', (SELECT GREATEST(MAX("id")+(SELECT seqincrement FROM pg_sequence WHERE seqrelid = 'public.agendas_id_seq'::regclass), (SELECT seqmin FROM pg_sequence WHERE seqrelid = 'public.agendas_id_seq'::regclass)) FROM "agendas"), false)
+[0m
+  ↳ bin/rails:4
+  [1m[36mArticle Load (19.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.5ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "That Hideous Strength"], ["content", "* Maiores odio distinctio. \n* Praesentium nostrum suscipit nemo doloremque facere. \n* Explicabo voluptas. \n* Sed magni libero. \n* At nihil deserunt omnis eveniet. \n* Occaecati quae molestiae quis quos. \n* Dolorem dolores ipsa. \n* Natus sint voluptate omnis molestias rerum. \n"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.697225"], ["id", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.4ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "Consider Phlebas"], ["content", "0. Impedit illum adipisci officiis. \n1. Adipisci consectetur sit qui. \n2. In aut totam excepturi et. \n3. Eum repellat deleniti veritatis. \n4. Facilis. \n5. Placeat voluptatem debitis facilis molestiae sit. \n6. Adipisci aspernatur itaque amet aut neque. \n"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.700527"], ["id", 2]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.4ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "This Lime Tree Bower"], ["content", "*Nihil* eius ut voluptate dolor vel. Excepturi quis officiis. Unde incidunt voluptates."], ["image", nil], ["updated_at", "2020-10-22 08:18:15.703338"], ["id", 3]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.3ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "In a Glass Darkly"], ["content", "sunt | quas | quia\n---- | ---- | ----\nmagni | cum | consequatur\nquia | in | sed"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.706105"], ["id", 4]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.4ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "The Last Enemy"], ["content", "#### Fugiat"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.709448"], ["id", 5]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.4ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "The Waste Land"], ["content", "# Assumenda"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.713331"], ["id", 6]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.4ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "In a Glass Darkly"], ["content", "* Vero illum molestiae officia nulla. \n* Id iste. \n* Necessitatibus. \n* Ut ipsa dolorem quia autem distinctio. \n* Quod et architecto animi. \n* Eligendi ut in. \n"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.717016"], ["id", 7]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (1.0ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "The Doors of Perception"], ["content", "* Quos aperiam. \n* Dolor tenetur nostrum minus rerum. \n* Eum quia voluptas qui debitis omnis. \n* Dolor inventore architecto tenetur ipsa. \n* Tenetur. \n* Dolor occaecati a est. \n* Sed sapiente non enim et sit. \n"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.721225"], ["id", 8]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.5ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "Pale Kings and Princes"], ["content", "Omnis ullam consequuntur tenetur sit debitis. Praesentium dolorem quia aut autem. _Et_ sapiente et qui pariatur. Aliquam magni suscipit nisi sit voluptas."], ["image", nil], ["updated_at", "2020-10-22 08:18:15.728046"], ["id", 9]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.4ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "Down to a Sunless Sea"], ["content", "* Consequatur eius vel. \n* Eaque dolorem enim vel consequatur. \n* Qui eligendi reprehenderit. \n* Debitis. \n* Libero beatae. \n* Voluptate adipisci tempora asperiores. \n* Placeat. \n"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.732210"], ["id", 10]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (1.1ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "Specimen Days"], ["content", "* Nisi aliquam qui. \n"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.735939"], ["id", 11]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.6ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "Pale Kings and Princes"], ["content", "Consectetur voluptatem molestiae sunt sed saepe. Blanditiis odio quidem. Sit *illum* aliquid blanditiis eaque nesciunt non perferendis. Sed debitis id mollitia. Omnis eius consequatur harum."], ["image", nil], ["updated_at", "2020-10-22 08:18:15.742402"], ["id", 12]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.6ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "Paths of Glory"], ["content", "0. Et accusamus dolor. \n1. Qui asperiores. \n2. Quisquam non occaecati. \n3. Odit aut. \n4. Provident voluptatem occaecati repellat quae quaerat. \n5. Ipsam non modi explicabo. \n"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.746554"], ["id", 13]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.5ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "Absalom, Absalom!"], ["content", "in | nulla | deserunt\n---- | ---- | ----\ndolorem | aut | temporibus\nqui | facilis | dolores"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.750754"], ["id", 14]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.6ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "Such, Such Were the Joys"], ["content", "0. Est doloribus laboriosam. \n1. Tempore eius minima totam pariatur. \n2. Voluptatem. \n3. Eveniet ut quasi quaerat voluptatem iste. \n4. Est sit et. \n"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.755582"], ["id", 15]]
+  ↳ bin/rails:4
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[36mArticle Update (0.7ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "content" = $2, "image" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "To Say Nothing of the Dog"], ["content", "```ruby\nAt quisquam qui doloribus.\n```"], ["image", nil], ["updated_at", "2020-10-22 08:18:15.760467"], ["id", 16]]
+  ↳ bin/rails:4
+  [1m[35m (1.4ms)[0m  [1m[34m              SELECT setval('public.articles_id_seq', (SELECT GREATEST(MAX("id")+(SELECT seqincrement FROM pg_sequence WHERE seqrelid = 'public.articles_id_seq'::regclass), (SELECT seqmin FROM pg_sequence WHERE seqrelid = 'public.articles_id_seq'::regclass)) FROM "articles"), false)
+[0m
+  ↳ bin/rails:4
+  [1m[35m (25.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-10-22 09:18:52 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by Users::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EccSMbIZlI338nRj5ZdjCB3S009IGvlWeUGr5Vm3xgxazBZfN3EhvlJ4NM0jsOxZc6hWZ/Hm+JQaSRJusno8zQ==", "user"=>{"email"=>"demarcus_krajcik@croninernser.net", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "demarcus_krajcik@croninernser.net"], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 4], ["current_sign_in_at", "2020-10-22 08:18:53.682476"], ["last_sign_in_at", "2020-10-20 09:09:27.809007"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "::1/128"], ["updated_at", "2020-10-22 08:18:53.685611"], ["id", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[35m (14.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (14.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+Redirected to http://localhost:3000/teams/2
+Completed 302 Found in 1426ms (ActiveRecord: 42.5ms)
+
+
+Started GET "/teams/2" for 127.0.0.1 at 2020-10-22 09:18:54 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.4ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 2]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (2657.4ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:31
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 4]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 5]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 6]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  Rendered shared/layout/_sidebar.html.erb (70.3ms)
+  Rendered shared/layout/_menu.html.erb (4.7ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+Completed 200 OK in 2848ms (Views: 2815.3ms | ActiveRecord: 18.4ms)
+
+
+user: wilromeo
+GET /teams/2
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__1405268664187283410_69943579960220'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__1405268664187283410_69943579960220'
+
+
+user: wilromeo
+GET /teams/2
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:41:in `block in _app_views_shared_layout__sidebar_html_erb__3334303955608239457_69943607757880'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__3334303955608239457_69943607757880'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__1953929373132574642_69943579978980'
+
+
+user: wilromeo
+GET /teams/2
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:47:in `block in _app_views_shared_layout__sidebar_html_erb__3334303955608239457_69943607757880'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__3334303955608239457_69943607757880'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__1953929373132574642_69943579978980'
+
+
+Started POST "/teams/Prodder/agendas" for 127.0.0.1 at 2020-10-22 09:19:22 +0100
+Processing by AgendasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QDMTRx6Qn3sHtl9dscbH0FnchMdQ8jiPN8mlgblI9it21/VYDHCoX+/4XPqYESOfn4dS9tsCdspCRRd660fOeA==", "title"=>"samedi", "team_id"=>"Prodder"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "Prodder"], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[36mAgenda Create (1.5ms)[0m  [1m[32mINSERT INTO "agendas" ("title", "created_at", "updated_at", "team_id", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "samedi"], ["created_at", "2020-10-22 08:19:22.484794"], ["updated_at", "2020-10-22 08:19:22.484794"], ["team_id", 2], ["user_id", 1]]
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (140.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:17
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 172ms (ActiveRecord: 145.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2020-10-22 09:19:22 +0100
+Processing by TeamsController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:59
+  Rendering teams/dashboard.html.erb within layouts/application
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."team_id" = $1[0m  [["team_id", 2]]
+  ↳ app/views/teams/dashboard.html.erb:12
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1[0m  [["team_id", 2]]
+  ↳ app/views/teams/dashboard.html.erb:43
+  Rendered teams/dashboard.html.erb within layouts/application (45.1ms)
+  Rendered shared/layout/_header.html.erb (0.4ms)
+  [1m[36mAgenda Load (1.0ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:31
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 4]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 5]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 6]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 10]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  Rendered shared/layout/_sidebar.html.erb (29.8ms)
+  Rendered shared/layout/_menu.html.erb (2.7ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+Completed 200 OK in 125ms (Views: 95.1ms | ActiveRecord: 9.4ms)
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Article => [:agenda]
+  Add to your finder: :includes => [:agenda]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:18:in `block (2 levels) in _app_views_teams_dashboard_html_erb__4578068887826277806_69943587686660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:16:in `block in _app_views_teams_dashboard_html_erb__4578068887826277806_69943587686660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:12:in `_app_views_teams_dashboard_html_erb__4578068887826277806_69943587686660'
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:41:in `block in _app_views_shared_layout__sidebar_html_erb__3334303955608239457_69943591790600'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__3334303955608239457_69943591790600'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__1953929373132574642_69943587759320'
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:47:in `block in _app_views_shared_layout__sidebar_html_erb__3334303955608239457_69943591790600'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__3334303955608239457_69943591790600'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__1953929373132574642_69943587759320'
+
+
+Started DELETE "/agendas/10" for 127.0.0.1 at 2020-10-22 09:19:37 +0100
+Processing by AgendasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eIZf7t3yHPVr52T0Wi43MU5TxlH14UfYlSEcTH9ISKVOYrnxzxIr0YOpZ1Nz+dN+iAgQYH4RCZ3gra63LUdw9g==", "id"=>"10"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.8ms)
+
+
+
+NoMethodError - undefined method `destroy' for nil:NilClass:
+  app/controllers/agendas_controller.rb:24:in `destroy'
+
+Started POST "/__better_errors/0782a4545538ee8c/variables" for 127.0.0.1 at 2020-10-22 09:19:38 +0100
