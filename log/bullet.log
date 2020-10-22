@@ -2295,3 +2295,771 @@ Call stack
   /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:16:in `block in _app_views_teams_dashboard_html_erb___1121042623819431372_70344682891000'
   /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:12:in `_app_views_teams_dashboard_html_erb___1121042623819431372_70344682891000'
 
+2020-10-22 16:10:05[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846568591400'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846568591400'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846568139140'
+
+2020-10-22 16:10:05[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846568591400'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846568591400'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846568139140'
+
+2020-10-22 16:10:14[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_47097458203400'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_47097458203400'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846569310640'
+
+2020-10-22 16:10:14[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_47097458203400'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_47097458203400'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846569310640'
+
+2020-10-22 16:10:22[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846551551820'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846551551820'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846548656800'
+
+2020-10-22 16:10:22[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846551551820'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846551551820'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846548656800'
+
+2020-10-22 16:10:24[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846553681020'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846553681020'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846552798360'
+
+2020-10-22 16:10:24[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846553681020'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846553681020'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846552798360'
+
+2020-10-22 16:10:30[WARN] user: wilromeo
+GET /teams/Prodder+++++
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846555851200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846555851200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846554658860'
+
+2020-10-22 16:10:30[WARN] user: wilromeo
+GET /teams/Prodder+++++
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846555851200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846555851200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846554658860'
+
+2020-10-22 16:10:32[WARN] user: wilromeo
+GET /teams/Prodder+++++
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846563398380'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846563398380'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846562877480'
+
+2020-10-22 16:10:32[WARN] user: wilromeo
+GET /teams/Prodder+++++
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846563398380'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846563398380'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846562877480'
+
+2020-10-22 16:10:37[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846564673560'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846564673560'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846564137200'
+
+2020-10-22 16:10:37[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846564673560'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846564673560'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846564137200'
+
+2020-10-22 16:10:38[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846565894640'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846565894640'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846565389240'
+
+2020-10-22 16:10:38[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846565894640'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846565894640'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846565389240'
+
+2020-10-22 16:10:42[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846567137500'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846567137500'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846566666140'
+
+2020-10-22 16:10:42[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846567137500'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846567137500'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846566666140'
+
+2020-10-22 16:10:43[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846568333120'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846568333120'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846567814120'
+
+2020-10-22 16:10:43[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846568333120'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846568333120'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846567814120'
+
+2020-10-22 16:10:59[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846569541840'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846569541840'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846569010720'
+
+2020-10-22 16:10:59[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846569541840'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846569541840'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846569010720'
+
+2020-10-22 16:11:07[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846549353180'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846549353180'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846542319840'
+
+2020-10-22 16:11:07[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846549353180'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846549353180'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846542319840'
+
+2020-10-22 16:11:09[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846552778720'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846552778720'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846552010280'
+
+2020-10-22 16:11:09[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846552778720'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846552778720'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846552010280'
+
+2020-10-22 16:11:11[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846554558580'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846554558580'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846553744980'
+
+2020-10-22 16:11:11[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846554558580'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846554558580'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846553744980'
+
+2020-10-22 16:11:12[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846561970900'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846561970900'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846555663420'
+
+2020-10-22 16:11:12[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846561970900'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846561970900'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846555663420'
+
+2020-10-22 16:11:15[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846563257660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846563257660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846562776020'
+
+2020-10-22 16:11:15[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846563257660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846563257660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846562776020'
+
+2020-10-22 16:11:17[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846564366860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846564366860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846563878280'
+
+2020-10-22 16:11:17[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846564366860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846564366860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846563878280'
+
+2020-10-22 16:11:21[WARN] user: wilromeo
+GET /agendas/11/articles/new
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846566200780'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846566200780'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846565653600'
+
+2020-10-22 16:11:21[WARN] user: wilromeo
+GET /agendas/11/articles/new
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846566200780'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846566200780'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846565653600'
+
+2020-10-22 16:11:29[WARN] user: wilromeo
+GET /articles/17
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846567945000'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846567945000'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846567387140'
+
+2020-10-22 16:11:29[WARN] user: wilromeo
+GET /articles/17
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846567945000'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846567945000'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846567387140'
+
+2020-10-22 16:11:33[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846569228260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846569228260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846568701060'
+
+2020-10-22 16:11:33[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846569228260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846569228260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846568701060'
+
+2020-10-22 16:11:36[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846548572660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846548572660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846540886140'
+
+2020-10-22 16:11:36[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846548572660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__4196938039584203595_69846548572660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__505189927122318163_69846540886140'
+
+2020-10-22 16:12:02[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___3017282687113581953_69987426060520'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___3017282687113581953_69987426060520'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___4415218738953724808_47216405941640'
+
+2020-10-22 16:12:02[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb___3017282687113581953_69987426060520'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___3017282687113581953_69987426060520'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___4415218738953724808_47216405941640'
+
+2020-10-22 16:13:33[WARN] user: wilromeo
+GET /
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___3165903032134877605_69936525228040'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___3165903032134877605_69936525228040'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___623636104967436082_47402892156940'
+
+2020-10-22 16:13:33[WARN] user: wilromeo
+GET /
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb___3165903032134877605_69936525228040'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___3165903032134877605_69936525228040'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___623636104967436082_47402892156940'
+
+2020-10-22 16:13:38[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___3165903032134877605_69936510044200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___3165903032134877605_69936510044200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___623636104967436082_69936507493760'
+
+2020-10-22 16:13:38[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb___3165903032134877605_69936510044200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___3165903032134877605_69936510044200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___623636104967436082_69936507493760'
+
+2020-10-22 16:13:44[WARN] user: wilromeo
+GET /teams/Zontrax
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__903214977049376059_69936511310920'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__903214977049376059_69936511310920'
+
+2020-10-22 16:13:48[WARN] user: wilromeo
+GET /teams/Zontrax
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__903214977049376059_69936519795320'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__903214977049376059_69936519795320'
+
+2020-10-22 16:13:50[WARN] user: wilromeo
+GET /teams/Zontrax
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__903214977049376059_69936521206980'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__903214977049376059_69936521206980'
+
+2020-10-22 16:13:55[WARN] user: wilromeo
+GET /teams/Zontrax
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__903214977049376059_69936523669300'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__903214977049376059_69936523669300'
+
+2020-10-22 16:13:57[WARN] user: wilromeo
+GET /teams/Zontrax
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__903214977049376059_69936525103780'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__903214977049376059_69936525103780'
+
+2020-10-22 16:14:04[WARN] user: wilromeo
+GET /teams/Zontrax
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__903214977049376059_69936518954940'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__903214977049376059_69936518954940'
+
+2020-10-22 16:14:19[WARN] user: wilromeo
+GET /teams/Zontrax
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__903214977049376059_69936522887520'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__903214977049376059_69936522887520'
+
+2020-10-22 16:14:25[WARN] user: wilromeo
+GET /teams/Zontrax
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__903214977049376059_69936504955920'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__903214977049376059_69936504955920'
+
+2020-10-22 16:14:30[WARN] user: wilromeo
+GET /teams/Zontrax
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__903214977049376059_69936512661160'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__903214977049376059_69936512661160'
+
+2020-10-22 16:46:56[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886766905000'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886766905000'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886766399580'
+
+2020-10-22 16:46:56[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886766905000'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886766905000'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886766399580'
+
+2020-10-22 16:46:58[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886768020080'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886768020080'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886767525520'
+
+2020-10-22 16:46:58[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886768020080'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886768020080'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886767525520'
+
+2020-10-22 16:47:00[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886748473600'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886748473600'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886742087280'
+
+2020-10-22 16:47:00[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886748473600'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886748473600'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886742087280'
+
+2020-10-22 16:47:06[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886751249200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886751249200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886750301620'
+
+2020-10-22 16:47:06[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886751249200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886751249200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886750301620'
+
+2020-10-22 16:47:08[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886753247320'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886753247320'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886752264820'
+
+2020-10-22 16:47:08[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886753247320'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886753247320'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886752264820'
+
+2020-10-22 16:48:10[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886760769200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886760769200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886754368820'
+
+2020-10-22 16:48:10[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886760769200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___1095136289220512793_69886760769200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___2544606682110438343_69886754368820'
+
+2020-10-22 17:06:59[WARN] user: wilromeo
+GET /
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb__3854783392071488411_47310869610740'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__3854783392071488411_47310869610740'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__3494039096855216759_69995311480680'
+
+2020-10-22 17:06:59[WARN] user: wilromeo
+GET /
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:45:in `block in _app_views_shared_layout__sidebar_html_erb__3854783392071488411_47310869610740'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb__3854783392071488411_47310869610740'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__3494039096855216759_69995311480680'
+
+2020-10-22 17:40:32[WARN] user: wilromeo
+GET /teams/1
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb___975104183882365049_69845936154180'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb___975104183882365049_69845936154180'
+
+2020-10-22 17:40:32[WARN] user: wilromeo
+GET /teams/1
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___182147356030527768_69845962854280'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___182147356030527768_69845962854280'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___3652072261109524520_69845936172940'
+
+2020-10-22 17:40:32[WARN] user: wilromeo
+GET /teams/1
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:44:in `block in _app_views_shared_layout__sidebar_html_erb___182147356030527768_69845962854280'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___182147356030527768_69845962854280'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___3652072261109524520_69845936172940'
+
+2020-10-22 17:40:38[WARN] user: wilromeo
+DELETE /agendas/2
+USE eager loading detected
+  Article => [:comments]
+  Add to your finder: :includes => [:comments]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/controllers/agendas_controller.rb:28:in `destroy'
+
+2020-10-22 17:40:38[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Article => [:agenda]
+  Add to your finder: :includes => [:agenda]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:18:in `block (2 levels) in _app_views_teams_dashboard_html_erb__395180999564577462_69845938672420'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:16:in `block in _app_views_teams_dashboard_html_erb__395180999564577462_69845938672420'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:12:in `_app_views_teams_dashboard_html_erb__395180999564577462_69845938672420'
+
+2020-10-22 17:40:38[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:38:in `block in _app_views_shared_layout__sidebar_html_erb___182147356030527768_69845947792160'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___182147356030527768_69845947792160'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___3652072261109524520_69845938920560'
+
+2020-10-22 17:40:38[WARN] user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:44:in `block in _app_views_shared_layout__sidebar_html_erb___182147356030527768_69845947792160'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:31:in `_app_views_shared_layout__sidebar_html_erb___182147356030527768_69845947792160'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___3652072261109524520_69845938920560'
+
