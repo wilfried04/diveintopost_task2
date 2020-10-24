@@ -1,5 +1,5 @@
 class AgendasController < ApplicationController
-  # before_action :set_agenda, only: %i[show edit update destroy]
+  before_action :set_agenda, only: %i[show edit update destroy]
 
   def index
     @agendas = Agenda.all
@@ -20,6 +20,31 @@ class AgendasController < ApplicationController
       render :new
     end
   end
+
+  #Define Destroy function
+  # The author of the agenda or the owner of the team tied to the agenda can remove the agenda.
+  def destroy
+    agenda = Agenda.find(params[:id])
+    team_members = agenda.team.members
+
+    agenda_user = agenda.user_id
+    owner_id = agenda.team.owner_id
+    puts "agenda_user:#{agenda_user}"
+    puts "owener_id:#{owner_id}"
+    puts "current_user:#{current_user.id}"
+
+    if current_user.id != agenda_user && current_user.id != owner_id
+      redirect_to dashboard_url, notice: 'agendaの作成者及びチームリーダーのみ削除できます。'
+    elsif agenda.destroy
+      team_members.each do | member |
+        AssignMailer.del_agenda_mail(member.email, agenda.title).deliver
+      end
+      redirect_to dashboard_url, notice: 'アジェンダを削除しました。'
+    else
+      redirect_to dashboard_url, notice: '削除に失敗しました。'
+    end
+ end
+  
 
   private
 

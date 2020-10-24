@@ -71,5 +71,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'timecop'
 end
-
+gem  'rubocop', require: false
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
