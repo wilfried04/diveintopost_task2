@@ -26101,3 +26101,2120 @@ Call stack
   /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__372241421963549726_47251397448840'
 
 
+Started GET "/" for 127.0.0.1 at 2020-10-26 10:32:07 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#top as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  Rendering statics/top.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2020-10-26 10:32:11 +0100
+Processing by StaticsController#top as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (6566.7ms)
+  Rendered statics/top.html.erb within layouts/application (4492.0ms)
+  Rendered shared/layout/_header.html.erb (0.8ms)
+  Rendered shared/layout/_header.html.erb (0.7ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  [1m[36mAgenda Load (0.6ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (3.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (2.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  Rendered shared/layout/_sidebar.html.erb (247.0ms)
+  Rendered shared/layout/_sidebar.html.erb (252.4ms)
+  Rendered shared/layout/_menu.html.erb (12.4ms)
+  Rendered shared/layout/_menu.html.erb (11.3ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+  Rendered shared/layout/_footer.html.erb (0.5ms)
+Completed 200 OK in 7657ms (Views: 7314.5ms | ActiveRecord: 41.5ms)
+
+
+user: wilromeo
+GET /
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:41:in `block in _app_views_shared_layout__sidebar_html_erb___1050421897248036931_70062316397240'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb___1050421897248036931_70062316397240'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__2116537898787710429_47202738014300'
+
+
+user: wilromeo
+GET /
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:47:in `block in _app_views_shared_layout__sidebar_html_erb___1050421897248036931_70062316397240'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb___1050421897248036931_70062316397240'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__2116537898787710429_47202738014300'
+
+
+Completed 200 OK in 5232ms (Views: 5151.7ms | ActiveRecord: 66.5ms)
+
+
+user: wilromeo
+GET /
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:41:in `block in _app_views_shared_layout__sidebar_html_erb___1050421897248036931_70062201299180'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb___1050421897248036931_70062201299180'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__2116537898787710429_70062305872620'
+
+
+user: wilromeo
+GET /
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:47:in `block in _app_views_shared_layout__sidebar_html_erb___1050421897248036931_70062201299180'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb___1050421897248036931_70062201299180'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__2116537898787710429_70062305872620'
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-26 18:48:55 +0100
+  [1m[35m (38.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#top as HTML
+  [1m[36mUser Load (55.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (107.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (3461.5ms)
+  Rendered shared/layout/_header.html.erb (0.4ms)
+  [1m[36mAgenda Load (37.9ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (50.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (2.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (266.5ms)
+  Rendered shared/layout/_menu.html.erb (4.5ms)
+  Rendered shared/layout/_footer.html.erb (0.9ms)
+Completed 200 OK in 4471ms (Views: 3805.2ms | ActiveRecord: 395.0ms)
+
+
+user: wilromeo
+GET /
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099705297660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099705297660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_47030116316340'
+
+
+user: wilromeo
+GET /
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099705297660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099705297660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_47030116316340'
+
+
+Started GET "/teams/BasicTeam" for 127.0.0.1 at 2020-10-26 18:49:10 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"BasicTeam"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (44.6ms)
+  Rendered shared/layout/_header.html.erb (0.8ms)
+  [1m[36mAgenda Load (1.1ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (33.3ms)
+  Rendered shared/layout/_menu.html.erb (50.7ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 183ms (Views: 157.0ms | ActiveRecord: 12.4ms)
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__4511039695767306942_70099940866920'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__4511039695767306942_70099940866920'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099942334540'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099942334540'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70099940877580'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099942334540'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099942334540'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70099940877580'
+
+
+Started GET "/teams/BasicTeam/edit" for 127.0.0.1 at 2020-10-26 18:49:17 +0100
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"BasicTeam"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (113.7ms)
+  Rendered teams/edit.html.erb within layouts/application (134.2ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (32.2ms)
+  Rendered shared/layout/_menu.html.erb (3.4ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 208ms (Views: 193.5ms | ActiveRecord: 4.6ms)
+
+
+user: wilromeo
+GET /teams/BasicTeam/edit
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100020638640'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100020638640'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100012002940'
+
+
+user: wilromeo
+GET /teams/BasicTeam/edit
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100020638640'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100020638640'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100012002940'
+
+
+Started PATCH "/teams/BasicTeam" for 127.0.0.1 at 2020-10-26 18:49:19 +0100
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ezkJqJ5ICzrEylT+sd0S+Q/dABE7/xTC88dLs9FyPlETMAqQFRDw3IOy9l2R6Xh3+1IXCFt1OcgmBt7G5NYd7Q==", "team"=>{"name"=>"BasicTeam", "icon_cache"=>"", "owner_id"=>"13"}, "commit"=>"Créer", "id"=>"BasicTeam"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/teams_controller.rb:45
+  [1m[36mTeam Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = $1 AND "teams"."id" != $2 LIMIT $3[0m  [["name", "BasicTeam"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:45
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:45
+  [1m[36mTeam Update (14.3ms)[0m  [1m[33mUPDATE "teams" SET "owner_id" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["owner_id", 13], ["updated_at", "2020-10-26 17:49:19.641223"], ["id", 1]]
+  ↳ app/controllers/teams_controller.rb:45
+  [1m[35m (108.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/teams_controller.rb:45
+Redirected to http://localhost:3000/teams/BasicTeam
+Completed 302 Found in 156ms (ActiveRecord: 128.3ms)
+
+
+Started GET "/teams/BasicTeam" for 127.0.0.1 at 2020-10-26 18:49:19 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"BasicTeam"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (1.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.4ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (39.8ms)
+  Rendered shared/layout/_header.html.erb (1.2ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (29.0ms)
+  Rendered shared/layout/_menu.html.erb (5.2ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+Completed 200 OK in 122ms (Views: 95.9ms | ActiveRecord: 12.4ms)
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__4511039695767306942_70100023130680'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__4511039695767306942_70100023130680'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100024766860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100024766860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100023142620'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100024766860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100024766860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100023142620'
+
+
+Started POST "/teams/BasicTeam/assigns" for 127.0.0.1 at 2020-10-26 18:49:26 +0100
+Processing by AssignsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cpc0stnqDBeLTQW37Th3bMJaq+HXveuutH82F8tpzQ0anjeKUrL38cw1pxTNDB3iNtW8+Lc3xqRhvqNi/s3usQ==", "email"=>"test@test.ts", "team_id"=>"BasicTeam"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:66
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1 AND "users"."email" = $2 LIMIT $3[0m  [["team_id", 1], ["email", "test@test.ts"], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:44
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:66
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.ts"], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:55
+Redirected to http://localhost:3000/teams/BasicTeam
+Filter chain halted as :user_exist? rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/teams/BasicTeam" for 127.0.0.1 at 2020-10-26 18:49:26 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"BasicTeam"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (1.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.5ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (37.6ms)
+  Rendered shared/layout/_header.html.erb (0.4ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (31.7ms)
+  Rendered shared/layout/_menu.html.erb (4.8ms)
+  Rendered shared/layout/_footer.html.erb (0.5ms)
+Completed 200 OK in 119ms (Views: 93.0ms | ActiveRecord: 8.9ms)
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__4511039695767306942_70100026552040'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__4511039695767306942_70100026552040'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100034835300'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100034835300'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100026579780'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100034835300'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100034835300'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100026579780'
+
+
+Started DELETE "/teams/BasicTeam/assigns/17" for 127.0.0.1 at 2020-10-26 18:49:38 +0100
+Processing by AssignsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"orNKFoRPq5Mf+JvFe7omZeYRcVcXNkzPHxUO7d1KuHnKukkuDxdQdViAOWZbjkzrEp5mTne8YcXK1JuY6O6bxQ==", "team_id"=>"BasicTeam", "id"=>"17"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAssign Load (0.9ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:18
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:19
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+Redirected to http://localhost:3000/teams/BasicTeam
+Completed 302 Found in 24ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/teams/BasicTeam" for 127.0.0.1 at 2020-10-26 18:49:38 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"BasicTeam"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (31.8ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (34.4ms)
+  Rendered shared/layout/_menu.html.erb (4.3ms)
+  Rendered shared/layout/_footer.html.erb (0.5ms)
+Completed 200 OK in 109ms (Views: 87.8ms | ActiveRecord: 8.7ms)
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__4511039695767306942_70100035719620'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__4511039695767306942_70100035719620'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100036584420'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100036584420'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100035699500'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100036584420'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100036584420'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100035699500'
+
+
+Started DELETE "/teams/BasicTeam/assigns/11" for 127.0.0.1 at 2020-10-26 18:49:47 +0100
+Processing by AssignsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cAVIE8lPxMwiXc8zsNUDbMxgmCP5EqdF8RgH8mFHMgYYDEsrQhc/KmUlbZCQ4WniOO+POpmYik8k2ZKHVOMRug==", "team_id"=>"BasicTeam", "id"=>"11"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAssign Load (1.2ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:18
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:19
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[35m (776.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "assigns" WHERE "assigns"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/assigns_controller.rb:32
+Redirected to http://localhost:3000/teams/BasicTeam
+Completed 302 Found in 797ms (ActiveRecord: 780.5ms)
+
+
+Started GET "/teams/BasicTeam" for 127.0.0.1 at 2020-10-26 18:49:48 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"BasicTeam"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (1.3ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (32.1ms)
+  Rendered shared/layout/_header.html.erb (0.4ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (36.0ms)
+  Rendered shared/layout/_menu.html.erb (3.6ms)
+  Rendered shared/layout/_footer.html.erb (0.5ms)
+Completed 200 OK in 117ms (Views: 95.1ms | ActiveRecord: 8.7ms)
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__4511039695767306942_70100037483880'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__4511039695767306942_70100037483880'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100038300260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100038300260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100037488440'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100038300260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100038300260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100037488440'
+
+
+Started DELETE "/teams/BasicTeam/assigns/17" for 127.0.0.1 at 2020-10-26 18:49:52 +0100
+Processing by AssignsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"P1PNoLOXTJ6YylUMA35FgYybJqKCYRykNuqMOcjBSXhXWs6YOM+3eN+y968jSi8PeBQxu+LrMa7jKxlM/WVqxA==", "team_id"=>"BasicTeam", "id"=>"17"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (2.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAssign Load (0.8ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:19
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+Redirected to http://localhost:3000/teams/BasicTeam
+Completed 302 Found in 20ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/teams/BasicTeam" for 127.0.0.1 at 2020-10-26 18:49:52 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"BasicTeam"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (1.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (37.1ms)
+  Rendered shared/layout/_header.html.erb (0.4ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (31.0ms)
+  Rendered shared/layout/_menu.html.erb (2.5ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+Completed 200 OK in 117ms (Views: 92.3ms | ActiveRecord: 9.5ms)
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__4511039695767306942_70100039211120'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__4511039695767306942_70100039211120'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099705907220'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099705907220'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100039216080'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099705907220'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099705907220'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100039216080'
+
+
+Started DELETE "/teams/BasicTeam/assigns/18" for 127.0.0.1 at 2020-10-26 18:49:55 +0100
+Processing by AssignsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"c8wRRyvtHH9hDwSbP3J/6ajrq7sDg2XlE2xGHoGPoHobxRJ/oLXnmSZ3pjgfRhVnXGS8omMJSO/GrdNrtCuDxg==", "team_id"=>"BasicTeam", "id"=>"18"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAssign Load (0.4ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:19
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "assigns" WHERE "assigns"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/assigns_controller.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/assigns_controller.rb:34
+  [1m[36mAssign Destroy (0.7ms)[0m  [1m[31mDELETE FROM "assigns" WHERE "assigns"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/assigns_controller.rb:34
+  [1m[35m (55.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/assigns_controller.rb:34
+  [1m[36mAssign Load (1.2ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."user_id" = $1 LIMIT $2[0m  [["user_id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:61
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:61
+Redirected to http://localhost:3000/teams/BasicTeam
+Completed 302 Found in 94ms (ActiveRecord: 62.0ms)
+
+
+Started GET "/teams/BasicTeam" for 127.0.0.1 at 2020-10-26 18:49:55 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"BasicTeam"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (1.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (27.8ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (29.2ms)
+  Rendered shared/layout/_menu.html.erb (3.4ms)
+  Rendered shared/layout/_footer.html.erb (0.7ms)
+Completed 200 OK in 101ms (Views: 76.6ms | ActiveRecord: 10.7ms)
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__4511039695767306942_70099940176200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__4511039695767306942_70099940176200'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099941727300'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099941727300'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70099940458320'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099941727300'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70099941727300'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70099940458320'
+
+
+Started POST "/teams/BasicTeam/agendas" for 127.0.0.1 at 2020-10-26 18:50:06 +0100
+Processing by AgendasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bAqzD+YthRXi/9WeoxoH7lNhsl1pQEYBxoZf9eXl9+EEA7A3bXV+86WHdz2DLm1gp+6lRAnKawsTR8qA0EHUXQ==", "title"=>"samedi", "team_id"=>"BasicTeam"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[36mAgenda Create (64.9ms)[0m  [1m[32mINSERT INTO "agendas" ("title", "created_at", "updated_at", "team_id", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "samedi"], ["created_at", "2020-10-26 17:50:06.330875"], ["updated_at", "2020-10-26 17:50:06.330875"], ["team_id", 1], ["user_id", 13]]
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (20.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:17
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 114ms (ActiveRecord: 88.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2020-10-26 18:50:06 +0100
+Processing by TeamsController#dashboard as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:59
+  Rendering teams/dashboard.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/dashboard.html.erb:12
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/dashboard.html.erb:43
+  Rendered teams/dashboard.html.erb within layouts/application (44.1ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 19]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (36.7ms)
+  Rendered shared/layout/_menu.html.erb (3.4ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+Completed 200 OK in 142ms (Views: 112.9ms | ActiveRecord: 9.7ms)
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Article => [:agenda]
+  Add to your finder: :includes => [:agenda]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:18:in `block (2 levels) in _app_views_teams_dashboard_html_erb___2249299604973802794_70100015207140'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:16:in `block in _app_views_teams_dashboard_html_erb___2249299604973802794_70100015207140'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:12:in `_app_views_teams_dashboard_html_erb___2249299604973802794_70100015207140'
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100022530800'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100022530800'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100015420900'
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100022530800'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100022530800'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100015420900'
+
+
+Started DELETE "/agendas/19" for 127.0.0.1 at 2020-10-26 18:50:12 +0100
+Processing by AgendasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lSvgyl3DOW19qHdw8O2UhwijmKTzeqNuRFOdHvL2+UL9IuPy1pvCizrQ1dPQ2f4J/CyPvZPwjmSRkghrx1La/g==", "id"=>"19"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:41
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:28
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 19]]
+  ↳ app/controllers/agendas_controller.rb:28
+  [1m[36mAgenda Destroy (1.3ms)[0m  [1m[31mDELETE FROM "agendas" WHERE "agendas"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/agendas_controller.rb:28
+  [1m[35m (30.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:28
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/mailers/delete_agenda_mailer.rb:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."email" FROM "users" WHERE "users"."keep_team_id" = $1[0m  [["keep_team_id", 1]]
+  ↳ app/mailers/delete_agenda_mailer.rb:4
+  Rendering delete_agenda_mailer/delete_agenda_mail.html.erb within layouts/mailer
+  Rendered delete_agenda_mailer/delete_agenda_mail.html.erb within layouts/mailer (1.1ms)
+DeleteAgendaMailer#delete_agenda_mail: processed outbound mail in 640.1ms
+Sent mail to kpondehou@gmail.com, toto@gmail.com (148.2ms)
+Date: Mon, 26 Oct 2020 18:50:14 +0100
+From: from@example.com
+To: kpondehou@gmail.com, 
+ toto@gmail.com
+Message-ID: <5f970c567d1d4_17382ac60dbfe78c9686d@wilromeo-Linux.mail>
+Subject: translation missing: ja.views.messages.delete_agenda
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+<h1>
+  translation missing: ja.views.messages.delete_agenda
+</h1>
+
+<h4>
+  translation missing: ja.views.messages.delete_agenda_title
+</h4>
+  </body>
+</html>
+
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2407ms (ActiveRecord: 34.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2020-10-26 18:50:14 +0100
+Processing by TeamsController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:59
+  Rendering teams/dashboard.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/dashboard.html.erb:12
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/dashboard.html.erb:43
+  Rendered teams/dashboard.html.erb within layouts/application (33.6ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (25.6ms)
+  Rendered shared/layout/_menu.html.erb (3.7ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+Completed 200 OK in 97ms (Views: 81.4ms | ActiveRecord: 6.0ms)
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Article => [:agenda]
+  Add to your finder: :includes => [:agenda]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:18:in `block (2 levels) in _app_views_teams_dashboard_html_erb___2249299604973802794_70100026798660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:16:in `block in _app_views_teams_dashboard_html_erb___2249299604973802794_70100026798660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:12:in `_app_views_teams_dashboard_html_erb___2249299604973802794_70100026798660'
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100035029500'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100035029500'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100026810600'
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100035029500'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb__2599922787072132462_70100035029500'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___127993146662160001_70100026810600'
+
+
+Started GET "/teams/groupe1" for 127.0.0.1 at 2020-10-26 18:50:24 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"groupe1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "keep_team_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["keep_team_id", 7], ["updated_at", "2020-10-26 17:50:24.047653"], ["id", 13]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (14.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (18.6ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (4.1ms)
+  Rendered shared/layout/_menu.html.erb (2.1ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 45.1ms | ActiveRecord: 18.3ms)
+
+
+user: wilromeo
+GET /teams/groupe1
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__4511039695767306942_70100035615580'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__4511039695767306942_70100035615580'
+
+
+Started GET "/teams/groupe1" for 127.0.0.1 at 2020-10-26 19:03:19 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"groupe1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (1.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (1879.0ms)
+  Rendered shared/layout/_header.html.erb (0.8ms)
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (22.7ms)
+  Rendered shared/layout/_menu.html.erb (3.6ms)
+  Rendered shared/layout/_footer.html.erb (1.1ms)
+Completed 200 OK in 2133ms (Views: 1966.6ms | ActiveRecord: 23.7ms)
+
+
+user: wilromeo
+GET /teams/groupe1
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__3118927989655588207_47175010048820'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__3118927989655588207_47175010048820'
+
+
+Started GET "/teams/BasicTeam" for 127.0.0.1 at 2020-10-26 19:03:27 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"BasicTeam"}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (4.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "keep_team_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["keep_team_id", 1], ["updated_at", "2020-10-26 18:03:27.150045"], ["id", 13]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (20.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.4ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (60.1ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (166.3ms)
+  Rendered shared/layout/_menu.html.erb (3.4ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+Completed 200 OK in 341ms (Views: 261.1ms | ActiveRecord: 46.2ms)
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__3118927989655588207_69846116463860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__3118927989655588207_69846116463860'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846118865260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846118865260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___840750315374373845_69846116505200'
+
+
+user: wilromeo
+GET /teams/BasicTeam
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846118865260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846118865260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___840750315374373845_69846116505200'
+
+
+Started POST "/teams/BasicTeam/agendas" for 127.0.0.1 at 2020-10-26 19:03:35 +0100
+Processing by AgendasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aIfrA8ye92sL5qewXv2JXkFuHv542lky8hMi/TqXHwwAjug7R8YMjUyeBRN+yePQteEJ5xhQdDgn0reIDzM8sA==", "title"=>"dimanche", "team_id"=>"BasicTeam"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (3.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "BasicTeam"], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:15
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[36mAgenda Create (1.0ms)[0m  [1m[32mINSERT INTO "agendas" ("title", "created_at", "updated_at", "team_id", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "dimanche"], ["created_at", "2020-10-26 18:03:35.490264"], ["updated_at", "2020-10-26 18:03:35.490264"], ["team_id", 1], ["user_id", 13]]
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (35.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:17
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 64ms (ActiveRecord: 42.1ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2020-10-26 19:03:35 +0100
+Processing by TeamsController#dashboard as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (1.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:59
+  Rendering teams/dashboard.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/dashboard.html.erb:12
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/dashboard.html.erb:43
+  Rendered teams/dashboard.html.erb within layouts/application (55.5ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 20]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (36.1ms)
+  Rendered shared/layout/_menu.html.erb (4.6ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+Completed 200 OK in 137ms (Views: 117.2ms | ActiveRecord: 9.7ms)
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Article => [:agenda]
+  Add to your finder: :includes => [:agenda]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:18:in `block (2 levels) in _app_views_teams_dashboard_html_erb__2375463755447274840_69846109912400'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:16:in `block in _app_views_teams_dashboard_html_erb__2375463755447274840_69846109912400'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:12:in `_app_views_teams_dashboard_html_erb__2375463755447274840_69846109912400'
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846116036260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846116036260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___840750315374373845_69846109977440'
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846116036260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846116036260'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___840750315374373845_69846109977440'
+
+
+Started DELETE "/agendas/20" for 127.0.0.1 at 2020-10-26 19:03:40 +0100
+Processing by AgendasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2TC3OZUZ6tshECrj4R8zQb9nChyd6A/9H8eLpB2diSKxObQBHkERPWZoiEDBK1nPS+gdBf1iIvfKBh7RKDmqng==", "id"=>"20"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAgenda Load (3.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:27
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 20]]
+  ↳ app/controllers/agendas_controller.rb:27
+  [1m[36mAgenda Destroy (1.3ms)[0m  [1m[31mDELETE FROM "agendas" WHERE "agendas"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/agendas_controller.rb:27
+  [1m[35m (29.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:27
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 49ms (ActiveRecord: 36.6ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2020-10-26 19:03:40 +0100
+Processing by TeamsController#dashboard as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:59
+  Rendering teams/dashboard.html.erb within layouts/application
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/dashboard.html.erb:12
+  [1m[36mAgenda Load (2.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mCACHE Agenda Load (0.0ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/teams/dashboard.html.erb:18
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/teams/dashboard.html.erb:43
+  Rendered teams/dashboard.html.erb within layouts/application (33.0ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (1.7ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 9]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 2]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 3]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (26.6ms)
+  Rendered shared/layout/_menu.html.erb (3.0ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 94ms (Views: 74.7ms | ActiveRecord: 11.2ms)
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Article => [:agenda]
+  Add to your finder: :includes => [:agenda]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:18:in `block (2 levels) in _app_views_teams_dashboard_html_erb__2375463755447274840_69846116991860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:16:in `block in _app_views_teams_dashboard_html_erb__2375463755447274840_69846116991860'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/dashboard.html.erb:12:in `_app_views_teams_dashboard_html_erb__2375463755447274840_69846116991860'
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:42:in `block in _app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846118004840'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846118004840'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___840750315374373845_69846117010580'
+
+
+user: wilromeo
+GET /dashboard
+USE eager loading detected
+  Agenda => [:articles]
+  Add to your finder: :includes => [:articles]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:48:in `block in _app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846118004840'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/shared/layout/_sidebar.html.erb:29:in `_app_views_shared_layout__sidebar_html_erb___3741543452352709445_69846118004840'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb___840750315374373845_69846117010580'
+
+
+Started GET "/teams/groupe1" for 127.0.0.1 at 2020-10-26 19:04:02 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"groupe1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (1.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "keep_team_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["keep_team_id", 7], ["updated_at", "2020-10-26 18:04:02.708953"], ["id", 13]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (1.2ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (18.4ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (1.5ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (5.1ms)
+  Rendered shared/layout/_menu.html.erb (4.4ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 101ms (Views: 47.2ms | ActiveRecord: 38.8ms)
+
+
+user: wilromeo
+GET /teams/groupe1
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__3118927989655588207_69846118605040'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__3118927989655588207_69846118605040'
+
+
+Started GET "/teams/groupe1/edit" for 127.0.0.1 at 2020-10-26 19:04:05 +0100
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"groupe1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (27.6ms)
+  Rendered teams/edit.html.erb within layouts/application (28.9ms)
+  Rendered shared/layout/_header.html.erb (0.6ms)
+  [1m[36mAgenda Load (0.7ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (6.6ms)
+  Rendered shared/layout/_menu.html.erb (3.7ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 67.5ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/teams/groupe1" for 127.0.0.1 at 2020-10-26 19:04:07 +0100
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/l4EzIPJ4I5uvLMgop5OtjBr1UXx7KvfoPq9lEJ8Ze2WVwf0CJEbaCnEEYOCqiQ4xOTCXJFmhtV1Oyjhd9hGUQ==", "team"=>{"name"=>"groupe1", "icon_cache"=>"", "owner_id"=>"13"}, "commit"=>"Créer", "id"=>"groupe1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/teams_controller.rb:45
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = $1 AND "teams"."id" != $2 LIMIT $3[0m  [["name", "groupe1"], ["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:45
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/teams_controller.rb:45
+Redirected to http://localhost:3000/teams/groupe1
+Completed 302 Found in 24ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/teams/groupe1" for 127.0.0.1 at 2020-10-26 19:04:07 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"groupe1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (1.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (13.3ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (4.9ms)
+  Rendered shared/layout/_menu.html.erb (3.3ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 41.3ms | ActiveRecord: 4.4ms)
+
+
+user: wilromeo
+GET /teams/groupe1
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__3118927989655588207_47175010094100'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__3118927989655588207_47175010094100'
+
+
+Started POST "/teams/groupe1/assigns" for 127.0.0.1 at 2020-10-26 19:04:18 +0100
+Processing by AssignsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2z8ekMoMRv4EGxZYXAYd9nygWmEBqAm2HwF9KjSHIDSzNh2oQVS9GENjtPt8Mnd4iC9NeGEiJLzKwOhfASMDiA==", "email"=>"saddath04@yahoo.fr", "team_id"=>"groupe1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:66
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1 AND "users"."email" = $2 LIMIT $3[0m  [["team_id", 7], ["email", "saddath04@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:44
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:66
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "saddath04@yahoo.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:55
+Redirected to http://localhost:3000/teams/groupe1
+Filter chain halted as :user_exist? rendered or redirected
+Completed 302 Found in 21ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/teams/groupe1" for 127.0.0.1 at 2020-10-26 19:04:18 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"groupe1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.4ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (23.3ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (2.9ms)
+  Rendered shared/layout/_menu.html.erb (5.1ms)
+  Rendered shared/layout/_footer.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 54.2ms | ActiveRecord: 5.5ms)
+
+
+user: wilromeo
+GET /teams/groupe1
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__3118927989655588207_69846115282320'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__3118927989655588207_69846115282320'
+
+
+Started DELETE "/teams/groupe1/assigns/19" for 127.0.0.1 at 2020-10-26 19:04:20 +0100
+Processing by AssignsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3Jws5RkWHF30UB2GLH7Blygp2Dpo96wRu9/PSFmI14S0lS/dkk7nu7MovyUMSqsZ3KbPIwh9gRtuHlo9bCz0OA==", "team_id"=>"groupe1", "id"=>"19"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAssign Load (0.5ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:19
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "assigns" WHERE "assigns"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/assigns_controller.rb:32
+Redirected to http://localhost:3000/teams/groupe1
+Completed 302 Found in 23ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/teams/groupe1" for 127.0.0.1 at 2020-10-26 19:04:20 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"groupe1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (1.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.4ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (20.7ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (4.8ms)
+  Rendered shared/layout/_menu.html.erb (2.5ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 51.0ms | ActiveRecord: 4.8ms)
+
+
+user: wilromeo
+GET /teams/groupe1
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__3118927989655588207_69846116649800'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__3118927989655588207_69846116649800'
+
+
+Started DELETE "/teams/groupe1/assigns/20" for 127.0.0.1 at 2020-10-26 19:04:23 +0100
+Processing by AssignsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Jh+DtsxDHtPMVAVQA5s8sxALjdy+FBGwtvDEq+HTfYFOFoCORxvlNYssp/Mjr1Y95ISaxd6ePLpjMVHe1HdePQ==", "team_id"=>"groupe1", "id"=>"20"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (1.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAssign Load (0.4ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:19
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+Redirected to http://localhost:3000/teams/groupe1
+Completed 302 Found in 17ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/teams/groupe1" for 127.0.0.1 at 2020-10-26 19:04:24 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"groupe1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:34
+  [1m[36mAssign Load (0.4ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/show.html.erb:40
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:43
+  Rendered teams/show.html.erb within layouts/application (21.1ms)
+  Rendered shared/layout/_header.html.erb (0.4ms)
+  [1m[36mAgenda Load (1.0ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (5.9ms)
+  Rendered shared/layout/_menu.html.erb (3.9ms)
+  Rendered shared/layout/_footer.html.erb (0.9ms)
+Completed 200 OK in 74ms (Views: 55.3ms | ActiveRecord: 4.6ms)
+
+
+user: wilromeo
+GET /teams/groupe1
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:43:in `block in _app_views_teams_show_html_erb__3118927989655588207_69846118015120'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:40:in `_app_views_teams_show_html_erb__3118927989655588207_69846118015120'
+
+
+Started POST "/teams/groupe1/agendas" for 127.0.0.1 at 2020-10-26 19:04:29 +0100
+Processing by AgendasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rX8wl0kcNg4C7LgoKFz8VtuvJRJCj7vbvkSIJMk/n/7FdjOvwkTN6EWUGosIaJbYLyAyCyIFltFrhR1R/Ju8Qg==", "title"=>"", "team_id"=>"groupe1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (1.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "groupe1"], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[36mAgenda Create (0.9ms)[0m  [1m[32mINSERT INTO "agendas" ("title", "created_at", "updated_at", "team_id", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", ""], ["created_at", "2020-10-26 18:04:29.787557"], ["updated_at", "2020-10-26 18:04:29.787557"], ["team_id", 7], ["user_id", 13]]
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (19.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:17
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 43ms (ActiveRecord: 24.7ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2020-10-26 19:04:29 +0100
+Processing by TeamsController#dashboard as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:59
+  Rendering teams/dashboard.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/dashboard.html.erb:12
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/dashboard.html.erb:43
+  Rendered teams/dashboard.html.erb within layouts/application (11.4ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (0.2ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:42
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 21]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:48
+  Rendered shared/layout/_sidebar.html.erb (8.3ms)
+  Rendered shared/layout/_menu.html.erb (3.4ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 43.0ms | ActiveRecord: 4.1ms)
+
+
+Started DELETE "/agendas/21" for 127.0.0.1 at 2020-10-26 19:04:32 +0100
+Processing by AgendasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MowDsIS3DPv8k/iLCeuOVpP4IIpLYxSQcveWN28AzX1ahQCID+/3HbvrWigp3+TYZ3c3kyvpOZqnNgNCWqTuwQ==", "id"=>"21"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAgenda Load (2.7ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:27
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 21]]
+  ↳ app/controllers/agendas_controller.rb:27
+  [1m[36mAgenda Destroy (0.7ms)[0m  [1m[31mDELETE FROM "agendas" WHERE "agendas"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/agendas_controller.rb:27
+  [1m[35m (47.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:27
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 69ms (ActiveRecord: 54.8ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2020-10-26 19:04:33 +0100
+Processing by TeamsController#dashboard as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:59
+  Rendering teams/dashboard.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/dashboard.html.erb:12
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/teams/dashboard.html.erb:43
+  Rendered teams/dashboard.html.erb within layouts/application (9.0ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (0.2ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 7]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (3.0ms)
+  Rendered shared/layout/_menu.html.erb (2.2ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 83ms (Views: 71.9ms | ActiveRecord: 3.6ms)
+
+
