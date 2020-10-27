@@ -24,8 +24,14 @@ class AgendasController < ApplicationController
   #Define Destroy function
   # The author of the agenda or the owner of the team tied to the agenda can remove the agenda.
   def destroy
-    @agenda.destroy
-    redirect_to dashboard_url
+    if @agenda.user.id == current_user.id || @agenda.team.owner.id == current_user.id
+      @agenda.destroy
+  #Sending an email to all members of the team to which the agenda belongs when it has been deleted
+      DeleteAgendaMailer.delete_agenda_mail(@agenda).deliver
+      redirect_to dashboard_path, notice: I18n.t('views.messages.delete_agenda')
+    else
+      redirect_to dashboard_path, notice: I18n.t('views.messages.cannot_delete_agenda')
+    end      
   end
   
 
