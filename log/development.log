@@ -31152,3 +31152,793 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/teams/titi" for 127.0.0.1 at 2020-10-27 18:33:41 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"titi"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:33
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/show.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:42
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:42
+  Rendered teams/show.html.erb within layouts/application (1669.9ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (0.6ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (12.3ms)
+  Rendered shared/layout/_menu.html.erb (3.3ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 1825ms (Views: 1710.3ms | ActiveRecord: 20.6ms)
+
+
+user: wilromeo
+GET /teams/titi
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:42:in `block in _app_views_teams_show_html_erb__730983215252285906_47368234307440'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:39:in `_app_views_teams_show_html_erb__730983215252285906_47368234307440'
+
+
+Started GET "/teams/titi/edit" for 127.0.0.1 at 2020-10-27 18:33:54 +0100
+Processing by TeamsController#edit as HTML
+  Parameters: {"id"=>"titi"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:75
+  Rendering teams/edit.html.erb within layouts/application
+  Rendered teams/_form.html.erb (7.8ms)
+  Rendered teams/edit.html.erb within layouts/application (9.3ms)
+  Rendered shared/layout/_header.html.erb (1.0ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (4.7ms)
+  Rendered shared/layout/_menu.html.erb (7.0ms)
+  Rendered shared/layout/_footer.html.erb (1.2ms)
+Completed 200 OK in 78ms (Views: 60.0ms | ActiveRecord: 4.0ms)
+
+
+Started PATCH "/teams/titi" for 127.0.0.1 at 2020-10-27 18:33:55 +0100
+Processing by TeamsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/xs4GnauJLvQIOX9NRTBBcKG1u2fT/PbYvPHDXzL3zk0xFiMn6BcRTciRJHIBTXi2kG6zj42cmuJcOr+s8bwqw==", "team"=>{"name"=>"titi", "icon_cache"=>"", "owner_id"=>"17"}, "commit"=>"Créer", "id"=>"titi"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/teams_controller.rb:34
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = $1 AND "teams"."id" != $2 LIMIT $3[0m  [["name", "titi"], ["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:34
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:34
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/teams_controller.rb:34
+Redirected to http://localhost:3000/teams/titi
+Completed 302 Found in 30ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/teams/titi" for 127.0.0.1 at 2020-10-27 18:33:56 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"titi"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:33
+  [1m[36mAssign Load (0.5ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/show.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:42
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:42
+  Rendered teams/show.html.erb within layouts/application (23.5ms)
+  Rendered shared/layout/_header.html.erb (0.4ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (5.6ms)
+  Rendered shared/layout/_menu.html.erb (7.9ms)
+  Rendered shared/layout/_footer.html.erb (1.1ms)
+Completed 200 OK in 93ms (Views: 67.5ms | ActiveRecord: 9.3ms)
+
+
+user: wilromeo
+GET /teams/titi
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:42:in `block in _app_views_teams_show_html_erb__730983215252285906_70205554935700'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:39:in `_app_views_teams_show_html_erb__730983215252285906_70205554935700'
+
+
+Started GET "/teams/titi" for 127.0.0.1 at 2020-10-27 18:34:07 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"titi"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:33
+  [1m[36mAssign Load (1.1ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/show.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:42
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:42
+  Rendered teams/show.html.erb within layouts/application (24.3ms)
+  Rendered shared/layout/_header.html.erb (0.2ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (4.5ms)
+  Rendered shared/layout/_menu.html.erb (4.9ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 51.9ms | ActiveRecord: 5.7ms)
+
+
+user: wilromeo
+GET /teams/titi
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:42:in `block in _app_views_teams_show_html_erb__730983215252285906_70205564665760'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:39:in `_app_views_teams_show_html_erb__730983215252285906_70205564665760'
+
+
+Started GET "/uploads/team/icon/8/article.jpg" for 127.0.0.1 at 2020-10-27 18:34:07 +0100
+Started GET "/uploads/team/icon/9/article.jpg" for 127.0.0.1 at 2020-10-27 18:34:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/team/icon/8/article.jpg"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/team/icon/9/article.jpg"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/teams/titi/agendas" for 127.0.0.1 at 2020-10-27 18:34:37 +0100
+Processing by AgendasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PPrb4qWAEnr02UaEJnblBPFmS/hq0cWa8uuR/pT0h/73Jbt0TI5qhBPb5+jbZxHj6aEn28uoRCoZaLwNW/mobA==", "title"=>"samedi", "team_id"=>"titi"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[36mAgenda Create (213.5ms)[0m  [1m[32mINSERT INTO "agendas" ("title", "created_at", "updated_at", "team_id", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "samedi"], ["created_at", "2020-10-27 17:34:37.875820"], ["updated_at", "2020-10-27 17:34:37.875820"], ["team_id", 11], ["user_id", 17]]
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (23.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:17
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 277ms (ActiveRecord: 244.8ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2020-10-27 18:34:38 +0100
+Processing by TeamsController#dashboard as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:69
+  Rendering teams/dashboard.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/dashboard.html.erb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/dashboard.html.erb:43
+  Rendered teams/dashboard.html.erb within layouts/application (17.3ms)
+  Rendered shared/layout/_header.html.erb (0.4ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:41
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 24]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:47
+  Rendered shared/layout/_sidebar.html.erb (14.5ms)
+  Rendered shared/layout/_menu.html.erb (3.6ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 54.1ms | ActiveRecord: 7.4ms)
+
+
+Started DELETE "/agendas/24" for 127.0.0.1 at 2020-10-27 18:34:41 +0100
+Processing by AgendasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2LLqZvDCDraeOeIlWL2KAp+eJ3BYSjuAgT3kl+8HFZMTbYrwGcx2SHk7Q0mlrH7lh1lLU/kzujBqvslkIAo6AQ==", "id"=>"24"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (1.8ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAgenda Load (0.7ms)[0m  [1m[34mSELECT  "agendas".* FROM "agendas" WHERE "agendas"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:41
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/agendas_controller.rb:27
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/agendas_controller.rb:28
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."agenda_id" = $1[0m  [["agenda_id", 24]]
+  ↳ app/controllers/agendas_controller.rb:28
+  [1m[36mAgenda Destroy (1.0ms)[0m  [1m[31mDELETE FROM "agendas" WHERE "agendas"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/agendas_controller.rb:28
+  [1m[35m (57.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/agendas_controller.rb:28
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/mailers/delete_agenda_mailer.rb:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "users"."email" FROM "users" WHERE "users"."keep_team_id" = $1[0m  [["keep_team_id", 11]]
+  ↳ app/mailers/delete_agenda_mailer.rb:4
+  Rendering delete_agenda_mailer/delete_agenda_mail.html.erb within layouts/mailer
+  Rendered delete_agenda_mailer/delete_agenda_mail.html.erb within layouts/mailer (0.8ms)
+DeleteAgendaMailer#delete_agenda_mail: processed outbound mail in 320.3ms
+Sent mail to rose1@gmail.com, toto@gmail.com (127.4ms)
+Date: Tue, 27 Oct 2020 18:34:42 +0100
+From: from@example.com
+To: rose1@gmail.com, 
+ toto@gmail.com
+Message-ID: <5f985a32e0d84_55572b14c6e67bb0640dc@wilromeo-Linux.mail>
+Subject: translation missing: ja.views.messages.delete_agenda
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+<h1>
+  translation missing: ja.views.messages.delete_agenda
+</h1>
+
+<h4>
+  translation missing: ja.views.messages.delete_agenda_title
+</h4>
+  </body>
+</html>
+
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1903ms (ActiveRecord: 65.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2020-10-27 18:34:43 +0100
+Processing by TeamsController#dashboard as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mCACHE Team Load (0.1ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:69
+  Rendering teams/dashboard.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/dashboard.html.erb:12
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "assigns" ON "users"."id" = "assigns"."user_id" WHERE "assigns"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/dashboard.html.erb:43
+  Rendered teams/dashboard.html.erb within layouts/application (8.8ms)
+  Rendered shared/layout/_header.html.erb (0.7ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (3.8ms)
+  Rendered shared/layout/_menu.html.erb (3.7ms)
+  Rendered shared/layout/_footer.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 42.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/teams/titi" for 127.0.0.1 at 2020-10-27 18:34:46 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"titi"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.9ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:33
+  [1m[36mAssign Load (0.7ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/show.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:42
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:42
+  Rendered teams/show.html.erb within layouts/application (26.3ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (0.5ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (5.2ms)
+  Rendered shared/layout/_menu.html.erb (7.1ms)
+  Rendered shared/layout/_footer.html.erb (0.5ms)
+Completed 200 OK in 88ms (Views: 67.2ms | ActiveRecord: 6.3ms)
+
+
+user: wilromeo
+GET /teams/titi
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:42:in `block in _app_views_teams_show_html_erb__730983215252285906_70205565695660'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:39:in `_app_views_teams_show_html_erb__730983215252285906_70205565695660'
+
+
+Started GET "/teams/titi" for 127.0.0.1 at 2020-10-27 18:34:52 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"titi"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:33
+  [1m[36mAssign Load (1.1ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/show.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:42
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:42
+  Rendered teams/show.html.erb within layouts/application (23.5ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (6.2ms)
+  Rendered shared/layout/_menu.html.erb (3.8ms)
+  Rendered shared/layout/_footer.html.erb (1.6ms)
+Completed 200 OK in 74ms (Views: 57.6ms | ActiveRecord: 5.6ms)
+
+
+user: wilromeo
+GET /teams/titi
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:42:in `block in _app_views_teams_show_html_erb__730983215252285906_70205566754680'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:39:in `_app_views_teams_show_html_erb__730983215252285906_70205566754680'
+
+
+Started GET "/uploads/team/icon/8/article.jpg" for 127.0.0.1 at 2020-10-27 18:34:53 +0100
+  
+Started GET "/uploads/team/icon/9/article.jpg" for 127.0.0.1 at 2020-10-27 18:34:53 +0100
+ActionController::RoutingError (No route matches [GET] "/uploads/team/icon/8/article.jpg"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/team/icon/9/article.jpg"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-10-28 08:09:27 +0100
+  [1m[35m (38.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by StaticsController#top as HTML
+  [1m[36mUser Load (55.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (108.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  Rendering statics/top.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2020-10-28 08:09:31 +0100
+Processing by StaticsController#top as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (1.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  Rendering statics/top.html.erb within layouts/application
+  Rendered statics/top.html.erb within layouts/application (6409.1ms)
+  Rendered statics/top.html.erb within layouts/application (4163.3ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (50.2ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  [1m[36mAgenda Load (50.5ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (79.8ms)
+  Rendered shared/layout/_sidebar.html.erb (77.9ms)
+  Rendered shared/layout/_menu.html.erb (8.6ms)
+  Rendered shared/layout/_menu.html.erb (4.9ms)
+  Rendered shared/layout/_footer.html.erb (0.4ms)
+  Rendered shared/layout/_footer.html.erb (0.3ms)
+Completed 200 OK in 7202ms (Views: 6585.6ms | ActiveRecord: 330.4ms)
+
+
+Completed 200 OK in 4326ms (Views: 4253.4ms | ActiveRecord: 62.0ms)
+
+
+Started GET "/teams/titi" for 127.0.0.1 at 2020-10-28 08:09:45 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"titi"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:36
+  [1m[36mAssign Load (0.5ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/show.html.erb:42
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:45
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:45
+  Rendered teams/show.html.erb within layouts/application (89.0ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (0.4ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (5.5ms)
+  Rendered shared/layout/_menu.html.erb (3.2ms)
+  Rendered shared/layout/_footer.html.erb (0.5ms)
+Completed 200 OK in 138ms (Views: 119.3ms | ActiveRecord: 5.9ms)
+
+
+user: wilromeo
+GET /teams/titi
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:45:in `block in _app_views_teams_show_html_erb__491037652691167699_69841357034920'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:42:in `_app_views_teams_show_html_erb__491037652691167699_69841357034920'
+
+
+Started PATCH "/teams/13/owner_change" for 127.0.0.1 at 2020-10-28 08:09:51 +0100
+Processing by TeamsController#owner_change as HTML
+  Parameters: {"authenticity_token"=>"cUCAtMnpGfZIZiBIsO43rjlpBETB1XCZnKKJoFwiaPO6n+AiIOdhCK9kgSRN/8NJIa5oZ2Cs8Sl3IaRTky9HYQ==", "id"=>"13"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/teams_controller.rb:54
+  [1m[36mTeam Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = $1 AND "teams"."id" != $2 LIMIT $3[0m  [["name", "titi"], ["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:54
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:54
+  [1m[36mTeam Update (13.0ms)[0m  [1m[33mUPDATE "teams" SET "owner_id" = $1, "updated_at" = $2 WHERE "teams"."id" = $3[0m  [["owner_id", 13], ["updated_at", "2020-10-28 07:09:51.713790"], ["id", 11]]
+  ↳ app/controllers/teams_controller.rb:54
+  [1m[35m (37.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/teams_controller.rb:54
+  Rendering new_leader_mailer/new_leader_mail.html.erb within layouts/mailer
+  Rendered new_leader_mailer/new_leader_mail.html.erb within layouts/mailer (1.3ms)
+NewLeaderMailer#new_leader_mail: processed outbound mail in 320.1ms
+Sent mail to toto@gmail.com (140.9ms)
+Date: Wed, 28 Oct 2020 08:09:53 +0100
+From: from@example.com
+To: toto@gmail.com
+Message-ID: <5f991941dcd76_6df32af0098ed9b4499f5@wilromeo-Linux.mail>
+Subject: =?UTF-8?Q?=E3=83=81=E3=83=BC=E3=83=A0=E3=83=AA=E3=83=BC=E3=83=80=E3=83=BC=E3=81=AB=E6=8C=87=E5=90=8D=E3=81=95=E3=82=8C=E3=81=BE=E3=81=97=E3=81=9F=E3=80=82?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPG1ldGEgaHR0
+cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNo
+YXJzZXQ9dXRmLTgiIC8+CiAgICA8c3R5bGU+CiAgICAgIC8qIEVtYWlsIHN0
+eWxlcyBuZWVkIHRvIGJlIGlubGluZSAqLwogICAgPC9zdHlsZT4KICA8L2hl
+YWQ+CgogIDxib2R5PgogICAgPGgxPuODgeODvOODoOODquODvOODgOODvOOB
+q+aMh+WQjeOBleOCjOOBvuOBl+OBn+OAgjwvaDE+CiAgPC9ib2R5Pgo8L2h0
+bWw+Cg==
+
+Redirected to http://localhost:3000/teams/titi
+Completed 302 Found in 2299ms (ActiveRecord: 53.3ms)
+
+
+Started GET "/teams/titi" for 127.0.0.1 at 2020-10-28 08:09:54 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"titi"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (1.4ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:36
+  [1m[36mAssign Load (1.9ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/show.html.erb:42
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:45
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:45
+  Rendered teams/show.html.erb within layouts/application (25.0ms)
+  Rendered shared/layout/_header.html.erb (0.5ms)
+  [1m[36mAgenda Load (1.1ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (10.9ms)
+  Rendered shared/layout/_menu.html.erb (5.7ms)
+  Rendered shared/layout/_footer.html.erb (0.5ms)
+Completed 200 OK in 113ms (Views: 91.4ms | ActiveRecord: 8.2ms)
+
+
+user: wilromeo
+GET /teams/titi
+USE eager loading detected
+  Assign => [:user]
+  Add to your finder: :includes => [:user]
+Call stack
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:45:in `block in _app_views_teams_show_html_erb__491037652691167699_69841352581200'
+  /home/wilromeo/Bureau/teamdev-develop/app/views/teams/show.html.erb:42:in `_app_views_teams_show_html_erb__491037652691167699_69841352581200'
+
+
+Started DELETE "/teams/titi/assigns/40" for 127.0.0.1 at 2020-10-28 08:09:59 +0100
+Processing by AssignsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/Pssp2q+MLiRcB6J4fGmahk3ZZlafifx2rFT1CeHfMs3JEwxg7BIRnZyv+Uc4FKNAfAJuvsHpkExMn4n6IpTWQ==", "team_id"=>"titi", "id"=>"40"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (2.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mAssign Load (0.5ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:19
+  [1m[36mCACHE Team Load (0.0ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:30
+  [1m[35m (23.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "assigns" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/assigns_controller.rb:32
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/assigns_controller.rb:34
+  [1m[36mAssign Destroy (0.4ms)[0m  [1m[31mDELETE FROM "assigns" WHERE "assigns"."id" = $1[0m  [["id", 40]]
+  ↳ app/controllers/assigns_controller.rb:34
+  [1m[35m (24.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/assigns_controller.rb:34
+  [1m[36mAssign Load (0.3ms)[0m  [1m[34mSELECT  "assigns".* FROM "assigns" WHERE "assigns"."user_id" = $1 LIMIT $2[0m  [["user_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:61
+  [1m[36mTeam Load (1.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/assigns_controller.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Update (0.9ms)[0m  [1m[33mUPDATE "users" SET "keep_team_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["keep_team_id", 1], ["updated_at", "2020-10-28 07:09:59.731429"], ["id", 17]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+Redirected to http://localhost:3000/teams/titi
+Completed 302 Found in 105ms (ActiveRecord: 67.0ms)
+
+
+Started GET "/teams/titi" for 127.0.0.1 at 2020-10-28 08:09:59 +0100
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"titi"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ /home/wilromeo/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT "teams".* FROM "teams" INNER JOIN "assigns" ON "teams"."id" = "assigns"."team_id" WHERE "assigns"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/application_controller.rb:17
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:13
+  [1m[36mTeam Load (0.7ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."name" = $1 ORDER BY "teams"."id" ASC LIMIT $2[0m  [["name", "titi"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "keep_team_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["keep_team_id", 11], ["updated_at", "2020-10-28 07:09:59.782886"], ["id", 17]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:7
+  Rendering teams/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:36
+  [1m[36mAssign Load (0.7ms)[0m  [1m[34mSELECT "assigns".* FROM "assigns" WHERE "assigns"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/teams/show.html.erb:42
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/teams/show.html.erb:45
+  Rendered teams/show.html.erb within layouts/application (18.9ms)
+  Rendered shared/layout/_header.html.erb (0.3ms)
+  [1m[36mAgenda Load (0.3ms)[0m  [1m[34mSELECT "agendas".* FROM "agendas" WHERE "agendas"."team_id" = $1[0m  [["team_id", 11]]
+  ↳ app/views/shared/layout/_sidebar.html.erb:29
+  Rendered shared/layout/_sidebar.html.erb (3.1ms)
+  Rendered shared/layout/_menu.html.erb (2.6ms)
+  Rendered shared/layout/_footer.html.erb (0.6ms)
+Completed 200 OK in 105ms (Views: 64.9ms | ActiveRecord: 17.1ms)
+
+
